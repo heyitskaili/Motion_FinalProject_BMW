@@ -1,14 +1,10 @@
-// import {gsap} from "gsap";
-// import {PattlesAnimation} from "./sections/pattles.js"
-// import {FaceAnimation} from "./sections/face.js"
-// import {PotAnimation} from "./sections/pot.js"
-// import {LineAnimation} from "./sections/greenline.js"
+import {gsap} from "gsap";
+import {LogoAnimation} from "./sections/logosection/logo.js"
 
 
-// const mainTL = gsap.timeline();
-// mainTL.add(PotAnimation());
-// mainTL.add(LineAnimation());
-// mainTL.add(FaceAnimation());
-// mainTL.add(PattlesAnimation());
+
+const mainTL = gsap.timeline();
+mainTL.add(LogoAnimation());
+
 
 

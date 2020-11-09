@@ -66,7 +66,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/content/maintabletsection/Maintablet.html",
 		"oF": 0
 		},
@@ -105,57 +105,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/sections/face.js": {
+	"/dev/js/sections/logosection/logo.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/sections/face-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/sections/greenline.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/sections/greenline-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/sections/pattles.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/sections/pattles-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/sections/pot-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/sections/pot-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/sections/pot.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/sections/pot-min.js",
+		"oA": 1,
+		"oAP": "/dev/js/sections/logosection/logo-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -290,7 +246,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_flowerpot.scss": {
+	"/dev/scss/sections/fingerprintsection/fingerprint.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -298,7 +254,33 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_flowerpot.css",
+		"oAP": "/dev/scss/sections/fingerprintsection/fingerprint.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/logosection/logo.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/logosection/logo.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/maintabletssection/tablet.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/maintabletssection/tablet.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -321,6 +303,39 @@
 		"oA": 2,
 		"oAP": "/build/node_modules",
 		"oF": 0
+		},
+	"/node_modules/gsap/CSSPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/CSSPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/gsap-core.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/gsap-core-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/package-lock.json": {
 		"ft": 524288,
