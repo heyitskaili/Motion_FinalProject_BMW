@@ -1,0 +1,69 @@
+/* =============
+    Buttons
+============= */
+
+
+.first {
+
+    width: 40px;
+    height: 40px;
+    background-color: #72560A;
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #72560A;
+    transition: 1s;
+    border:3px solid white;
+    z-index:1;
+
+}
+
+.first:focus {
+    box-shadow: 0 0 0 1000px #72560A;
+}
+
+
+.second {
+
+    width: 40px;
+    height: 40px;
+    background-color: #ED8AAD;
+    position: absolute;
+    top: 72%;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #ED8AAD;
+    transition: 1s;
+    border:3px solid white;
+
+}
+
+.second:focus {
+    box-shadow: 0 0 0 1000px #ED8AAD;
+}
+
+
+.third {
+
+    width: 40px;
+    height: 40px;
+    background-color: #FFE987;
+    position: absolute;
+    top: 72%;
+    left: 54%;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #FFE987;
+    transition: 1s;
+    border:3px solid white;
+
+}
+
+.third:focus {
+    box-shadow: 0 0 0 1000px #FFE987;
+}
