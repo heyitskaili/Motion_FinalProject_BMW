@@ -423,3 +423,8 @@ textarea {
 /* =============
     Footer
 ============= */
+#FingerPrint {
+  display: none; }
+
+#MainTablet {
+  display: none; }
