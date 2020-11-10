@@ -1,4 +1,8 @@
 import {gsap} from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+
+gsap.registerPlugin(GSDevTools);
+
 import {LogoAnimation} from "./sections/logosection/logo.js"
 
 
@@ -8,3 +12,4 @@ mainTL.add(LogoAnimation());
 
 
 
+GSDevTools.create();
