@@ -343,6 +343,9 @@ template {
       #svg-container > div section svg {
         width: 100%; }
 
+.show {
+  display: none; }
+
 /* =============
     Typography
 ============= */
@@ -424,8 +427,5 @@ textarea {
 /* =============
     Footer
 ============= */
-#FingerPrint {
-  display: none; }
-
 #MainTablet {
   display: none; }
