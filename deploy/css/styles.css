@@ -333,6 +333,7 @@ template {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
     position: relative; }
     #svg-container > div section {
       position: absolute;

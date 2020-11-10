@@ -1,17 +1,43 @@
-import {gsap} from "gsap";
+import { gsap } from "gsap";
+import { DrawSVGPlugin} from "gsap/DrawSVGPlugin";
 
-// gsap.set("#logo",{transformOrigin: "center"});
+gsap.registerPlugin(DrawSVGPlugin);
 
-export function LogoAnimation(){
-    var tl = gsap.timeline();
-    tl.from("#triangle1",{duration:0.5,alpha:-1});
-    tl.from("#triangle2",{duration:0.5,rotate:90,alpha:-1});
-    tl.from("#triangle3",{duration:0.5,alpha:-1});
-    tl.from("#triangle4",{duration:0.5,rotate:260,alpha:-1});
-    tl.from("#BMW",{duration:1,scaleY:30,alpha:-1});
-    tl.from("#oval1",{duration:1,scale:30,alpha:-1});
+gsap.set("#Everything",{transformOrigin: "center"});
+
+export function LogoAnimation() {
+    var logotl = gsap.timeline();
+    logotl.from("#triangle1outline,#triangle2outline, #triangle3outline,#triangle4outline", {
+        duration: 1,
+        drawSVG: "50% 50%"
+        
+    });
 
 
+    logotl.from("#triangle1inside, #triangle2inside, #triangle3inside, #triangle4inside", {
+        duration: 0.3,
+        alpha: -1
+    });
 
-    return tl;
+    logotl.from("#circleoutline", {
+        duration: 1,
+        drawSVG: "75%, 75%"
+    });
+
+    logotl.from("#BMW", {
+        duration: 0.3,
+        y:-20,
+        alpha:-1
+    });
+
+    logotl.to("#Everything", {
+        duration: 0.5,
+        y:90,
+        alpha:-1
+        
+        
+    });
+
+
+    return logotl;
 }
