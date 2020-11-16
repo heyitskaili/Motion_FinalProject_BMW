@@ -23,25 +23,25 @@ export function MaintabletAnimation() {
 
     });
 
-    maintablettl.from("#light, #triangleleft8,#triangleleft7,#triangleright8,#triangleright5, #milesection3, #milesection4", {
+    maintablettl.from("#light, #triangleleft8,#triangleleft7,#triangleright8,#triangleright5, #milesection3, #milesection4, #polygon1, #polygon5", {
         duration: 0.3,
         alpha: -1
 
     });
 
-    maintablettl.from("#cardetail, #triangleleft5, #triangleleft6, #triangleright4, #triangleright7, #milesection1, #milesection5", {
+    maintablettl.from("#cardetail, #triangleleft5, #triangleleft6, #triangleright4, #triangleright7, #milesection1, #milesection5, #polygon2, #polygon6", {
         duration: 0.3,
         alpha: -1
 
     });
 
-    maintablettl.from("#carinside, #triangleleft3, #triangleleft4, #triangleright3, #triangleright6,#milesection6, #milesection7", {
+    maintablettl.from("#carinside, #triangleleft3, #triangleleft4, #triangleright3, #triangleright6,#milesection6, #milesection7, #polygon3, #polygon7", {
         duration: 0.3,
         alpha: -1
 
     });
 
-    maintablettl.from("#miles,#milenumber, #VoiceControlonpath, #VoiceControlon", {
+    maintablettl.from("#miles,#milenumber, #VoiceControlonpath, #VoiceControlon, #polygon4, #polygon8", {
         duration: 0.3,
         alpha: -1
 
