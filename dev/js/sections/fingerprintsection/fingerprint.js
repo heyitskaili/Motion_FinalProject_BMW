@@ -1,9 +1,9 @@
 import {gsap} from "gsap";
 import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
-gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin, ScrambleTextPlugin);
 
-// import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-// gsap.registerPlugin(ScrambleTextPlugin);
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+
 
 gsap.set("#access-granted-bar",{transformOrigin: "center"});
 gsap.set("#disappear",{transformOrigin: "center"});
@@ -42,16 +42,16 @@ export function FingerprintAnimation() {
 
     });
 
-    // fingerprinttl.to("#fingerprintscanning", {
+    fingerprinttl.to("#demo-text", {
         
-    //     scrambleText: {
-    //         duration: 3,
-    //         text: "ScrambleText allows you to animate the scrambling of text.",
-    //         chars: "lowerCase",
-    //         revealDelay: 0.5,
-    //         tweenLength: true
-    //     }
-    // })
+        scrambleText: {
+            duration: 3,
+            text: "ScrambleText allows you to animate the scrambling of text.",
+            chars: "lowerCase",
+            revealDelay: 0.5,
+            tweenLength: true
+        }
+    })
 
     fingerprinttl.from("#access-granted-bar", {
         yoyo: true,
