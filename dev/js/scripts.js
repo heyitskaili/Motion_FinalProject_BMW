@@ -7,12 +7,14 @@ gsap.registerPlugin(GSDevTools);
 
 import {LogoAnimation} from "./sections/logosection/logo.js"
 import {FingerprintAnimation} from "./sections/fingerprintsection/fingerprint.js"
+import {MaintabletAnimation} from "./sections/maintabletsection/maintablet.js"
 
 
 
 const mainTL = gsap.timeline();
 mainTL.add(LogoAnimation());
 mainTL.add(FingerprintAnimation());
+mainTL.add(MaintabletAnimation());
 
 
 
