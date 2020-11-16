@@ -6,6 +6,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 // gsap.registerPlugin(ScrambleTextPlugin);
 
 gsap.set("#access-granted-bar",{transformOrigin: "center"});
+gsap.set("#disappear",{transformOrigin: "center"});
 
 export function FingerprintAnimation() {
     var fingerprinttl = gsap.timeline();
@@ -16,7 +17,7 @@ export function FingerprintAnimation() {
 
     });
 
-    fingerprinttl.from("#outerline, #triangleright2, #triangleleft1", {
+    fingerprinttl.from("#outerline, #triangleright, #triangleleft", {
         duration: 1,
         drawSVG: "83% 83%"
 
@@ -67,6 +68,13 @@ export function FingerprintAnimation() {
         alpha: -1
 
     });
+
+    fingerprinttl.to("#disappear", {
+        duration: 0.5,
+        alpha: -1
+
+    });
+
 
     return fingerprinttl;
 }
