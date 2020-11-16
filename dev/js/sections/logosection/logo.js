@@ -25,7 +25,7 @@ export function LogoAnimation() {
     });
 
     logotl.from("#BMW", {
-        duration: 0.3,
+        duration: 1.2,
         y:-20,
         alpha:-1
     });
@@ -34,7 +34,6 @@ export function LogoAnimation() {
         duration: 0.5,
         y:90,
         alpha:-1
-        
         
     });
 

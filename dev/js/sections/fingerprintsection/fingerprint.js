@@ -2,8 +2,8 @@ import {gsap} from "gsap";
 import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin);
 
-import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-gsap.registerPlugin(ScrambleTextPlugin);
+// import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+// gsap.registerPlugin(ScrambleTextPlugin);
 
 gsap.set("#access-granted-bar",{transformOrigin: "center"});
 
@@ -53,11 +53,11 @@ export function FingerprintAnimation() {
     // })
 
     fingerprinttl.from("#access-granted-bar", {
-
+        yoyo: true,
         duration: 0.5,
-        scale:-10,
-        alpha: -1
-
+        alpha: -1,
+        yPercent:20
+        
     });
 
 
