@@ -42,16 +42,16 @@ export function FingerprintAnimation() {
 
     });
 
-    fingerprinttl.to("#demo-text", {
+    // fingerprinttl.to("#demo-text", {
         
-        scrambleText: {
-            duration: 3,
-            text: "ScrambleText allows you to animate the scrambling of text.",
-            chars: "lowerCase",
-            revealDelay: 0.5,
-            tweenLength: true
-        }
-    })
+    //     scrambleText: {
+    //         duration: 3,
+    //         text: "ScrambleText allows you to animate the scrambling of text.",
+    //         chars: "lowerCase",
+    //         revealDelay: 0.5,
+    //         tweenLength: true
+    //     }
+    // })
 
     fingerprinttl.from("#access-granted-bar", {
         yoyo: true,
