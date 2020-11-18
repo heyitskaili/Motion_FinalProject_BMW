@@ -95,6 +95,12 @@ export function MaintabletAnimation() {
        
     });
 
+    maintablettl.from("#DETECTED", {
+        duration: 0.2,
+        alpha:-1
+        
+    });
+
     maintablettl.from("#orangerectangle", {
         duration: 0.4,
         drawSVG:"25% 25%"
@@ -121,11 +127,7 @@ export function MaintabletAnimation() {
         
     });
 
-    maintablettl.from("#DETECTED", {
-        duration: 0.2,
-        alpha:-1
-        
-    });
+   
 
 
 
