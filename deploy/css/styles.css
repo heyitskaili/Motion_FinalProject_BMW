@@ -320,7 +320,8 @@ template {
 #svg-container {
   display: grid;
   grid-template-columns: auto 90% auto;
-  grid-template-areas: ". svgs ."; }
+  grid-template-areas: ". svgs .";
+  background-color: black; }
   @media (min-width: 768px) {
     #svg-container {
       grid-template-columns: auto 80% auto; } }

@@ -78,9 +78,53 @@ export function MaintabletAnimation() {
         duration: 0.4,
         scale:0,
         stagger: 0.1,
-        ease: "back.out(2)"
+        ease: "back.out(1.7)", x: 300
         
 
+    });
+
+    maintablettl.from("#ovel22", {
+        duration: 0.2,
+        alpha:-1
+       
+    });
+
+    maintablettl.from("#path22", {
+        duration: 0.4,
+        drawSVG:"0"
+       
+    });
+
+    maintablettl.from("#orangerectangle", {
+        duration: 0.4,
+        drawSVG:"25% 25%"
+       
+    });
+
+    maintablettl.from(".text", {
+        duration: 0.4,
+        scale:0,
+        stagger: -0.1,
+        ease: "back.out(1.7)", x: 300
+        
+    });
+
+    maintablettl.from("#Rectangleeee", {
+        duration: 0.2,
+        alpha:-1
+        
+    });
+
+    maintablettl.from("#detectedtrianglegroup", {
+        duration: 0.2,
+        alpha:-1
+        
+    });
+
+    maintablettl.from("#DETECTED", {
+        duration: 0.2,
+        alpha:-1
+        
     });
 
 
