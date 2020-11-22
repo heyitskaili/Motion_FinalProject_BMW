@@ -7,15 +7,10 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
 gsap.set("#access-granted-bar",{transformOrigin: "center"});
 gsap.set("#disappear",{transformOrigin: "center"});
+gsap.set("#outersquare",{transformOrigin: "center"});
 
 export function FingerprintAnimation() {
     var fingerprinttl = gsap.timeline();
-
-    fingerprinttl.from("#logo", {
-        duration: 0.3,
-        alpha: -1
-
-    });
 
     fingerprinttl.from("#outerline, #triangleright, #triangleleft", {
         duration: 1,
@@ -31,27 +26,19 @@ export function FingerprintAnimation() {
     });
 
     fingerprinttl.from("#outersquare", {
-        duration: 0.3,
+        duration: 2,
+        scale:0.2,
+        alpha: -1,
+        ease: "elastic.out(1, 0.3)"
+    },"fingerprinttime1");
+
+    fingerprinttl.from(".fingerprintscanningletter", {
+        stagger: 0.1,
+        duration: 0.1,
         alpha: -1
-    });
 
-    fingerprinttl.from("#fingerprintscanning", {
+    },"fingerprinttime1");
 
-        duration: 0.3,
-        alpha: -1
-
-    });
-
-    // fingerprinttl.to("#demo-text", {
-        
-    //     scrambleText: {
-    //         duration: 3,
-    //         text: "ScrambleText allows you to animate the scrambling of text.",
-    //         chars: "lowerCase",
-    //         revealDelay: 0.5,
-    //         tweenLength: true
-    //     }
-    // })
 
     fingerprinttl.from("#access-granted-bar", {
         yoyo: true,

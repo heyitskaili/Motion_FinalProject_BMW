@@ -32,10 +32,14 @@ export function LogoAnimation() {
 
     logotl.to("#Everything", {
         duration: 0.5,
-        y:90,
-        alpha:-1
+        y:"-=320",
+        x:"+=0",
+
+        scale:0.2
         
     });
+
+
 
 
     return logotl;
