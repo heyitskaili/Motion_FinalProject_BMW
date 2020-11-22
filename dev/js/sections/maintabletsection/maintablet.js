@@ -11,17 +11,11 @@ gsap.registerPlugin(DrawSVGPlugin);
 export function MaintabletAnimation() {
     var maintablettl = gsap.timeline();
 
-    maintablettl.from("#innerline, #triangleright2outline, #triangleright3outline, #triangleright4outline, #triangleright5outline, #triangleright6outline, #triangleright7outline, #triangleright8outline, #triangleright9outline", {
+    maintablettl.from(".triangleoutliness", {
         duration: 1,
         drawSVG: "50% 50%"
 
-    }, "cat");
-
-    maintablettl.from("#triangleleft9outline,#triangleleft8outline,#triangleleft7outline, #triangleleft6outline, #triangleleft5outline, #triangleleft4outline, #triangleleft3outline, #triangeleft2outline", {
-        duration: 1,
-        drawSVG: "50% 50%"
-
-    },"cat");
+    });
 
     maintablettl.from("#lightdetail,#triangleright2, #triangleright9, #triangeleft2, #triangleleft9, #milesection2", {
         duration: 0.3,
@@ -111,7 +105,8 @@ export function MaintabletAnimation() {
         duration: 0.4,
         scale:0,
         stagger: -0.1,
-        ease: "back.out(1.7)", x: 300
+        ease: "back.out(1)", 
+        x: 100
         
     });
 
