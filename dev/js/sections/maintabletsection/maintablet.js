@@ -60,7 +60,9 @@ export function MaintabletAnimation() {
 
     });
 
-    maintablettl.from("#speed-section", {
+    maintablettl.from(".speed", {
+        scale:0.2,
+        stagger:0.1,
         duration: 1,
         alpha:-1
 
@@ -69,7 +71,7 @@ export function MaintabletAnimation() {
     });
 
     maintablettl.from(".aspeed", {
-        duration: 0.4,
+        duration: 0.2,
         scale:0,
         stagger: 0.1,
         ease: "back.out(1.7)", x: 300
