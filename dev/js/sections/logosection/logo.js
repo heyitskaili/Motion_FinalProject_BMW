@@ -8,7 +8,7 @@ gsap.set("#Everything",{transformOrigin: "center"});
 export function LogoAnimation() {
     var logotl = gsap.timeline();
     logotl.from("#triangle1outline,#triangle2outline, #triangle3outline,#triangle4outline", {
-        duration: 1,
+        duration: 0.7,
         drawSVG: "50% 50%"
         
     });
@@ -20,12 +20,12 @@ export function LogoAnimation() {
     });
 
     logotl.from("#circleoutline", {
-        duration: 1,
+        duration: 0.7,
         drawSVG: "75%, 75%"
     });
 
     logotl.from("#BMW", {
-        duration: 1.2,
+        duration: 0.7,
         y:-20,
         alpha:-1
     });

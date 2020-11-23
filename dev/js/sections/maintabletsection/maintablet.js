@@ -1,21 +1,23 @@
-import {
-    gsap
-} from "gsap";
-import {
-    DrawSVGPlugin
-} from "gsap/DrawSVGPlugin";
+import { gsap} from "gsap";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin);
-
+var maintablettl = gsap.timeline();
 
 export function MaintabletAnimation() {
-    var maintablettl = gsap.timeline();
+    
 
     maintablettl.from(".triangleoutliness", {
         duration: 1,
         drawSVG: "50% 50%"
 
-    });
+    },"time1");
+
+    maintablettl.from(".triangleoutliness2", {
+        duration: 1,
+        drawSVG: "50% 50%"
+
+    },"time1");
 
     maintablettl.from("#lightdetail,#triangleright2, #triangleright9, #triangeleft2, #triangleleft9, #milesection2", {
         duration: 0.3,
