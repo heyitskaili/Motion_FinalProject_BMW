@@ -4,6 +4,8 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin);
 var maintablettl = gsap.timeline();
 
+// gsap.set("#speedTag",{transformOrigin: "700px 500px"});
+
 export function MaintabletAnimation() {
     
 
@@ -62,15 +64,22 @@ export function MaintabletAnimation() {
 
     });
 
-    maintablettl.from(".speed", {
+    maintablettl.from(".speedmeter", {
         scale:0.2,
         stagger:0.1,
         duration: 1,
         alpha:-1
 
-        
+    },"time3");
+
+    maintablettl.to("#speedTag", {
+
+        duration: 0.2,
+        y:"-=-200",
+        x:"+=150"
 
     });
+
 
     maintablettl.from(".aspeed", {
         duration: 0.2,
@@ -79,7 +88,10 @@ export function MaintabletAnimation() {
         ease: "back.out(1.7)", x: 300
         
 
-    });
+    },"time3");
+
+
+
 
     maintablettl.from("#ovel22", {
         duration: 0.2,
@@ -126,7 +138,6 @@ export function MaintabletAnimation() {
         
     });
 
-   
 
 
 
