@@ -72,11 +72,12 @@ export function MaintabletAnimation() {
 
     },"time3");
 
-    maintablettl.to("#speedTag", {
-
+    maintablettl.from("#speedTag", {
+        alpha:-1,
         duration: 0.2,
-        y:"-=-200",
-        x:"+=150"
+        transformOrigin:" -=-200 +=150"
+        // y:"-=-200",
+        // x:"+=150"
 
     });
 
